@@ -1,6 +1,3 @@
 <% if (post.author) { %>
-    <div>
-        <p class="article-author">  written by </p>
-        <a href="<%= author.github%>" class="article-author"><%= author.name%></a>
-    </div>
+<a class="article-author" href="<%= post.authorlink ? post.authorlink : ''%>"><%= post.author %></a>
 <% } %>

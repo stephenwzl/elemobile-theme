@@ -13,8 +13,10 @@
 
 .article-author
   @extend $block-caption
-
-
+  letter-spacing normal
+  font-weight normal
+  display inline-block
+  text-transform none
 .article-category
   float: left
   line-height: 1em
@@ -44,6 +46,8 @@
 .article-entry
   @extend $base-style
   clearfix()
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing inherit
   color: color-default
   padding: 0 article-padding
   p, table
